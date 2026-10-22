@@ -1,0 +1,22 @@
+# KiCad temporary and backup files
+*.bak
+*-bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-save.kicad_pcb
+*-save.kicad_sch
+_autosave-*
+*.lck
+*.tmp
+fp-info-cache
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Python cache (if scripts run)
+__pycache__/
+*.py[cod]
+*$py.class

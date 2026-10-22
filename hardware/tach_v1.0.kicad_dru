@@ -1,0 +1,9 @@
+(version 1)
+
+# A few GND pads sit where their own GND tracks leave room for only one pour
+# thermal spoke instead of KiCad's default minimum of two. Every GND pad is also
+# connected by routed tracks (DRC reports 0 unconnected items), so one spoke is
+# enough here. Thermal relief stays on, which keeps the pads hand-solderable.
+(rule "GND pad thermal spokes"
+  (condition "A.NetName == '/GND'")
+  (constraint min_resolved_spokes 1))
